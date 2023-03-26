@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'constants.dart';
+import 'package:bmi_calculator/constants.dart';
 
 class CardContent extends StatelessWidget {
   CardContent({this.icon, this.text});
@@ -11,17 +11,9 @@ class CardContent extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        FaIcon(
-          icon,
-          size: 80.0
-        ),
-        SizedBox(
-          height: 15.0
-        ),
-        Text(
-          text,
-          style: kLabelTextStyle
-        ),
+        FaIcon(icon, size: 80.0),
+        SizedBox(height: 15.0),
+        Text(text, style: kLabelTextStyle),
       ],
     );
   }
